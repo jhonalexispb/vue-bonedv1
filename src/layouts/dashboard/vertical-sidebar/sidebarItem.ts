@@ -19,7 +19,19 @@ const sidebarItem: menu[] = [
   {
     title: 'Sample Page',
     icon: 'custom-sample',
-    to: '/'
+    to: '/sistema/dashboard'
+  },
+  { header: 'Almacen' },
+  {
+    title: 'Almacen',
+    icon: 'custom-box-1',
+    to: '#',
+    children: [
+      {
+        title: 'Lineas farmaceuticas',
+        to: '/sistema/lineasFarmaceuticas'
+      }
+    ]
   },
   { header: 'Others' },
   {

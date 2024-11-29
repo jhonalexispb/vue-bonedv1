@@ -1,15 +1,20 @@
 const MainRoutes = {
-  path: '/main',
+  path: '/sistema',
   meta: {
     requiresAuth: true
   },
-  redirect: '/main/dashboard/default',
+  redirect: '/sistema/dashboard/',
   component: () => import('@/layouts/dashboard/DashboardLayout.vue'),
   children: [
     {
       name: 'Starter',
-      path: '/',
+      path: 'dashboard',
       component: () => import('@/views/StarterPage.vue')
+    },
+    {
+      name: 'LineasFarmaceuticas',
+      path: 'lineasFarmaceuticas',
+      component: () => import('@/views/Apps/LineasFarmaceuticas.vue')
     }
   ]
 };
