@@ -1,0 +1,12 @@
+.v-theme--dark {
+  &.v-menu {
+    > .v-overlay__content {
+      border: 1px solid rgb(var(--v-theme-borderLight));
+      border-radius: 10px;
+    }
+  }
+
+  .v-btn--disabled {
+    opacity: 0.5;
+  }
+}
